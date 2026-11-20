@@ -169,46 +169,109 @@ export default function Home() {
           link="/portfolio"
           linkLabel="All galleries"
         />
-        <div className="mt-16 space-y-24 lg:mt-24 lg:space-y-36">
-          {galleries.slice(0, 3).map((c, i) => (
-            <article key={c.slug} className="grid items-center gap-8 lg:grid-cols-12 lg:gap-10">
-              <Link
-                to={`/portfolio/${c.slug}`}
-                className={`zoom-frame block lg:col-span-7 ${i % 2 ? 'lg:order-2 lg:col-start-6' : ''}`}
-                aria-label={`View gallery: ${c.title}`}
-                tabIndex={-1}
-              >
-                <RevealImage>
-                  <Photo name={c.cover} aspect={i % 2 ? '4/5' : '3/2'} sizes="(min-width:1024px) 58vw, 100vw" alt={alt(c.cover)} />
-                </RevealImage>
-              </Link>
-              <div className={`lg:col-span-4 ${i % 2 ? 'lg:order-1 lg:col-start-1' : 'lg:col-start-9'}`}>
-                <Reveal>
-                  <p className="eyebrow flex items-center gap-4 text-pink">
-                    <span>{String(i + 1).padStart(2, '0')}</span>
-                    <span className="h-px w-10 bg-line" aria-hidden="true" />
-                    <span className="text-stone">{c.gallery.length} photographs</span>
-                  </p>
-                </Reveal>
-                <Reveal delay={100}>
-                  <h3 className="display mt-6 text-5xl lg:text-6xl">
-                    <Link to={`/portfolio/${c.slug}`} className="hover:italic">
-                      {c.couple || c.title}
-                    </Link>
-                  </h3>
-                </Reveal>
-                <Reveal delay={200}>
-                  <p className="mt-6 max-w-sm text-base leading-relaxed text-taupe">{c.excerpt}</p>
-                </Reveal>
-                <Reveal delay={300}>
-                  <Link to={`/portfolio/${c.slug}`} className="group eyebrow mt-9 inline-flex items-center gap-4">
-                    <span className="link-line">View the gallery</span>
-                    <ArrowRight className="w-8 transition-transform duration-500 group-hover:translate-x-1.5" />
-                  </Link>
-                </Reveal>
-              </div>
-            </article>
-          ))}
+        <div className="mt-20 space-y-28 lg:mt-28 lg:space-y-44">
+          {galleries.slice(0, 3).map((c, i) => {
+            const flip = i % 2 === 1
+            const [, second, ...others] = c.gallery
+            const thumbs = others.slice(0, 3)
+            const more = c.gallery.length - 2 - thumbs.length
+            const to = `/portfolio/${c.slug}`
+            return (
+              <article key={c.slug} className="group/card grid items-center gap-x-10 gap-y-16 lg:grid-cols-12">
+                {/* Photo collage */}
+                <Link
+                  to={to}
+                  className={`relative block lg:col-span-7 ${flip ? 'lg:order-2 lg:col-start-6' : ''}`}
+                  aria-label={`View gallery: ${c.title}`}
+                  tabIndex={-1}
+                >
+                  {/* blush block peeking out behind the photo */}
+                  <span
+                    aria-hidden="true"
+                    className={`absolute inset-0 -z-10 bg-paper transition-transform duration-700 ease-[var(--ease-silk)] ${
+                      flip
+                        ? '-translate-x-3 translate-y-3 group-hover/card:-translate-x-5 group-hover/card:translate-y-5 sm:-translate-x-5 sm:translate-y-5'
+                        : 'translate-x-3 translate-y-3 group-hover/card:translate-x-5 group-hover/card:translate-y-5 sm:translate-x-5 sm:translate-y-5'
+                    }`}
+                  />
+                  <div className="zoom-frame">
+                    <RevealImage>
+                      <Photo name={c.cover} aspect={flip ? '4/5' : '3/2'} sizes="(min-width:1024px) 58vw, 100vw" alt={alt(c.cover)} />
+                    </RevealImage>
+                  </div>
+                  {/* photo count */}
+                  <span className={`eyebrow absolute top-4 bg-white/95 px-3.5 py-2 !text-[0.6rem] font-medium text-ink shadow-sm ${flip ? 'right-4' : 'left-4'}`}>
+                    {c.gallery.length} photographs
+                  </span>
+                  {/* second photo, overlapping the corner */}
+                  {second && (
+                    <span
+                      className={`absolute -bottom-10 block w-[29%] border-[5px] border-white shadow-[0_22px_45px_-18px_rgb(23_12_18/0.55)] transition-transform duration-700 ease-[var(--ease-silk)] sm:w-[30%] sm:border-[7px] ${
+                        flip ? 'left-4 -rotate-3 group-hover/card:-rotate-1 lg:-left-8' : 'right-4 rotate-3 group-hover/card:rotate-1 lg:-right-8'
+                      } group-hover/card:-translate-y-2`}
+                    >
+                      <RevealImage delay={150}>
+                        <Photo name={second} aspect="4/5" sizes="(min-width:1024px) 18vw, 36vw" alt={alt(second)} position="center 30%" />
+                      </RevealImage>
+                    </span>
+                  )}
+                </Link>
+
+                {/* Text */}
+                <div className={`relative lg:col-span-4 ${flip ? 'lg:order-1 lg:col-start-1' : 'lg:col-start-9'}`}>
+                  <span
+                    aria-hidden="true"
+                    className="display pointer-events-none absolute -top-20 -left-1 text-[8.5rem] leading-none text-pink/15 select-none lg:-top-28 lg:text-[12rem]"
+                  >
+                    {String(i + 1).padStart(2, '0')}
+                  </span>
+                  <div className="relative">
+                    <Reveal>
+                      <p className="eyebrow flex items-center gap-3 text-pink">
+                        <span className="h-px w-8 bg-pink" aria-hidden="true" />
+                        Gallery
+                      </p>
+                    </Reveal>
+                    <Reveal delay={80}>
+                      <h3 className="display mt-5 text-5xl lg:text-6xl">
+                        <Link to={to} className="transition-colors duration-300 hover:text-pink">
+                          {c.couple || c.title}
+                        </Link>
+                      </h3>
+                    </Reveal>
+                    <Reveal delay={160}>
+                      <p className="mt-5 max-w-sm text-base leading-relaxed text-taupe">{c.excerpt}</p>
+                    </Reveal>
+                    {/* peek at more photos from the gallery */}
+                    <Reveal delay={240}>
+                      <Link to={to} className="mt-7 flex items-center" aria-hidden="true" tabIndex={-1}>
+                        {thumbs.map((t, n) => (
+                          <span
+                            key={t}
+                            className={`h-14 w-14 overflow-hidden rounded-full border-[3px] border-white shadow-md transition-transform duration-500 group-hover/card:translate-x-0 ${n ? '-ml-3' : ''}`}
+                            style={{ transitionDelay: `${n * 60}ms` }}
+                          >
+                            <Photo name={t} fill sizes="56px" alt="" position="center 30%" />
+                          </span>
+                        ))}
+                        {more > 0 && (
+                          <span className="-ml-3 flex h-14 w-14 items-center justify-center rounded-full border-[3px] border-white bg-pink text-sm font-medium text-white shadow-md">
+                            +{more}
+                          </span>
+                        )}
+                      </Link>
+                    </Reveal>
+                    <Reveal delay={320}>
+                      <Link to={to} className="btn btn-dark group mt-8 rounded-full">
+                        View the gallery
+                        <ArrowRight className="w-6 transition-transform duration-500 group-hover:translate-x-1" />
+                      </Link>
+                    </Reveal>
+                  </div>
+                </div>
+              </article>
+            )
+          })}
         </div>
       </section>
 
