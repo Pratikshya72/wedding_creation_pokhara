@@ -1,0 +1,613 @@
+{
+  "dsc00010": {
+    "w": 6343,
+    "h": 4229,
+    "folder": null,
+    "file": "DSC00010.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAABwBACdASoYABAAPu1iqk2ppaQiMAgBMB2JbACdMoR3ACGHEUvE80/hq3CIAADN7l4miB1J9JhDnhpBineJDOlB5vK3ASQltOTVsL6QFAH7A2GjfRT3S7iq/X7sTKv0wtGZCNsr2rSl0v7lMalX6RzEKUSbVnvDXaIfUAAA"
+  },
+  "dsc01538": {
+    "w": 4672,
+    "h": 7008,
+    "folder": null,
+    "file": "DSC01538.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAACwBgCdASoYACQAPu1oqU2ppqQiMBqqqTAdiWYAnTMvyAuLSpBJCkkoe8/Ffx31csclmTmuoHvcvrp0csKLAAD+867+dLfpPajsHp/BR6Ll4+NYWk5cUa0vGEJZwOCdqp0uR/A3DeYkfO+GOk7Z6yuYTSYhvVhaiSh/AImvSI7XiHoOFy3ywiCM1zVZQIhK+WzoIAitwzLlSs8gL4pU3CQhb/9nwRAAAAA="
+  },
+  "dsc01555": {
+    "w": 7008,
+    "h": 4672,
+    "folder": null,
+    "file": "DSC01555.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAwCdASoYABAAPu1qrU8ppiQiMAgBMB2JQBhQA9K7ENVPkZhQ8YAA/uy+lIebNY/PYPSpqF/k79qrTpQsmqv/dh5T25ZoqGu8MbxkDLjwRZIAAAA="
+  },
+  "dsc01558": {
+    "w": 4672,
+    "h": 7008,
+    "folder": null,
+    "file": "DSC01558.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAAAQBgCdASoYACQAPu1iqU2ppaOiMBqqqTAdiUAYmwdPrAl33dl431MAbDDQdU9mOW5PtQVHuZTnRAAA/m8RRNCeJK1DCq3v+Mx45PzW7ZHdnZTPBLc9eCvXIfj2uPPdcc/Tu26GO162QbwccTVWYwFIa1Jwl5Ve4V0rWRH4odigAAAA"
+  },
+  "dsc01565": {
+    "w": 4672,
+    "h": 3113,
+    "folder": null,
+    "file": "DSC01565.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACwAwCdASoYABAAPu1kq04ppaQiMAgBMB2JZQCdABtYcmuWvLbncAD+nsXpViBb3Y8dK41aoPToIB9OFInrtgCSsxjH0PeTaM3kjD1k7MqdS8XAAAA="
+  },
+  "dsc01568": {
+    "w": 4672,
+    "h": 7008,
+    "folder": null,
+    "file": "DSC01568.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAADQBQCdASoYACQAPu1op02ppqOiMBqqqTAdiUAXqwdmn8QtVhviwutV8R/hm/37Fzd37OdLW86AAP5v02SCOYgbsyr1eBrScQFIogC1FJ4fBjjI4njYJRHvUOqOHbKbacu4VLGTdSPG4+qESEy0x2e/t5LzFHceyHVxqPYs5YOOdq4Z57l4L88AAAA="
+  },
+  "dsc01578": {
+    "w": 4608,
+    "h": 3072,
+    "folder": null,
+    "file": "DSC01578.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAwAgCdASoYABAAA4BaJQBYdhYqLbIjbMe6AAD9GVliQL35MLKqUvQP8YP25pjaINJu1rhTejkVWuvK9fF44sBn+av1dQSY8ChgAA=="
+  },
+  "engagement-img-8300": {
+    "w": 4160,
+    "h": 6240,
+    "folder": "Engagement",
+    "file": "IMG_8300.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAADQBQCdASoYACQAPulaqE2pJKQiMBqtUSAdCUAYOYutrE+8IYike8V5RIzFIl/9N2RYp1NhBAMAAP76Xp/jm1PXKD/mCMQhb02CQ3RoFeUsSrat6/yFPJDWIkVlwCU7qQpTtaorvfYQ9uM+Brrstj6ochk8EZQvMHPw4IiM67zgRQcBBMpGCJLqegh2bbsAAAA="
+  },
+  "haldi-mehendi-1c7a0514": {
+    "w": 3805,
+    "h": 4686,
+    "folder": "Haldi mehendi",
+    "file": "1C7A0514.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAADwBQCdASoYAB4APu1gqU6ppSOiMBgMATAdiWwAnTMy8LRx0WfS5h/QVX4wm9SjKqs8T9WA+HlRKAD+8dwENHHEpboNjxO3MPF/qRdJ3CqZ78/14RxvuvrXXwnQD+mihsezau8YjMvvXhrCFnTP66cwEzjfk2mIVLkzP70V0BZSBuu+gBKKZilND+eCzMFJwirNtcNb2KftqM0nPgwx3RBEScyFdJH9nb64piCsAAA="
+  },
+  "haldi-mehendi-dsc00427": {
+    "w": 4672,
+    "h": 7008,
+    "folder": "Haldi mehendi",
+    "file": "DSC00427.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRt4AAABXRUJQVlA4INIAAABQBwCdASoYACQAPu1iqlAppSOisBVaqTAdiWwAnTKEfjSBKKARaAyeAFhhTJEO12qK8cc9c9XwjpxNTwhbBXF8tO0AAPX+Vudb8/LqNhgZf9uvZWbnikh6ks+LOEk+YphTTfPF0wteyfyu6cF043GJ86bFJ3AtiXxP48Yf0fO0oTCpYjpxP0VepfM0N7nbHJkO43yf5YwDcos116GzVZ2uVOyw2mCqV+u1CrHWfjUP1yjXzqlLHS5g6CvKTPlKrmwX2/oqwcskeVc1xiRGWZwoAAA="
+  },
+  "haldi-mehendi-dsc00438": {
+    "w": 4672,
+    "h": 7008,
+    "folder": "Haldi mehendi",
+    "file": "DSC00438.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRtYAAABXRUJQVlA4IMoAAACQBwCdASoYACQAPu1iqE4ppaOiNVQIATAdiWwAsR7LwsAEOrXpN3JHt/j/AezGC5gw3UpKXIjLjzZOlLSRtoIfR2kcRQAA3gZPEBT2rHeQc7u4qpe/tiqDl7kqTQ2ik9dPIHwTS1ut2Z23VlcV9wV2bus68N/PhmgUy/OrSh+bS1ZDc+MvMNqhYtinBKqa3ENVsKshpP64b6YUcydwew3kuGjX1Jzc5dZ3UbC/5tqaQ1nlBYSz8uTkbf53Au0NnEviQZjKhcT6KAAA"
+  },
+  "post-wedding-dsc01296": {
+    "w": 4672,
+    "h": 7008,
+    "folder": "Post wedding",
+    "file": "DSC01296.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAAAQBgCdASoYACQAPu1gqVAppSOiqrgN+TAdiUAWI+vobb9s/ELqHbXSfTKiMyBkWgzI0xMlt7czOEAA/vQl0v3dYDC6ViNSOF6eu2oRKu1RHLo6spR6q6Bk1V61DZnzloaYW74JqxIaEKarsJNxItvy2rLRaDvjrEqDduEkGUSG6FMnnrQGeO4eD01pd3OpvfSGU9JcsFmU7zhsscmVXPeV91+844c5E65OR2e4KyKCjPwhOAA="
+  },
+  "post-wedding-dsc01348": {
+    "w": 4672,
+    "h": 7008,
+    "folder": "Post wedding",
+    "file": "DSC01348.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAABQBgCdASoYACQAPu1iqk6ppSOiNVQIATAdiWIArDLtRZ7bD0ANiE2dPL2ec4ZyzwJaPUA3IZdkuCmXAAD+2U0S0F36wLhWSObqcQZb0V4CFU/RS+/DFpCBL8ZMVg/86aVodebLZesV12jV81KTG6XbUMgWKFPIOM71170Zb5NTCZF5Vr2e+lZmzJ2F42O5QjE0OLXHNoII/MfkFdargAAA"
+  },
+  "post-wedding-dsc01371": {
+    "w": 4672,
+    "h": 7008,
+    "folder": "Post wedding",
+    "file": "DSC01371.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAADwBQCdASoYACQAPtlco02oJaMiOrZoAQAbCWMAxzAWDTbrpmog3n8n1+yfSts/SluLbQxbEvGSAAD+7wuO8FOfDBgDmXguhGZWXpfBWZfYyYX6Rk3t7mNOe0IGAlI9mJjxQYpKOsGNgott2Y6xd98LftEIafLqDuS4NytGrLXRgYPwS/Se2zSqEAAAAA=="
+  },
+  "post-wedding-dsc08405": {
+    "w": 4672,
+    "h": 7008,
+    "folder": "Post wedding",
+    "file": "DSC08405.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAADwBQCdASoYACQAPu1iqk+ppSOiMBVaqTAdiWYArk77SqCGARIuA4Os45WvZfXkZpsvFoZc8C58YAD1/lMNYJvyEsVL7zY6TFO0Lj/WoHW6fflYNbWqDQqzwzbTHELqN0u+krPD4aHNoGG/M1SStt11plwBMoEpPc3dUPMEclwDZvYKZSkeMuppEp/ZIJ9BayaA3s0cDQi17O4oy/1q+iy0SUc7wcnhJKuNYepObQAAAA=="
+  },
+  "post-wedding-dsc08414": {
+    "w": 4672,
+    "h": 7008,
+    "folder": "Post wedding",
+    "file": "DSC08414.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAABwBgCdASoYACQAPu1wqlEppqOiqrgKATAdiWIAuzNyQP8cPS4e9CQgkm5MAdg5XQfnbRxHKFfD9MEhRGAA/i3iNiDxHDFmjHHCMHP2HYpm3H3ZPWWRQYMaHEya0WpbScghe2CL4y6ON2UC5qhNurKWpte7UK1ZSkBlTOiRSPMqeWAjqfzAlfRiPludroJbjd+NkZuxr0XKpOlvSJ69hM9IUnjgAA=="
+  },
+  "post-wedding-pokhara-dorje-resort-47-of-57": {
+    "w": 4608,
+    "h": 3072,
+    "folder": "Post wedding",
+    "file": "pokhara dorje resort (47 of 57).jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAABwBACdASoYABAAPu1krU6ppaSiMAgBMB2JbACdB3gAdg3cQ7dN/pIpW59CQAD+l9YzzRhqaYs3Qk7qnhznOy87/a/34TKtfaKr50H6sPcF3W5QBzY3o5Crv836XTTacQSVSF++yN4n7CBaSzhi9O+3d9eez4AA"
+  },
+  "post-wedding-postwed-27": {
+    "w": 6700,
+    "h": 4467,
+    "folder": "Post wedding",
+    "file": "postwed (27).jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAwCdASoYABAAPu1kq04ppaQiMAgBMB2JZgABH6O4aXPeMvx96vsAAP70Bha14BE3MyYdP95+X4jx8mthWTj13Wk0mOcYZDwmvUjBnO38+1G7Xo2oX9oZaBCedeAA"
+  },
+  "post-wedding-postwedd-88-of-224": {
+    "w": 5760,
+    "h": 3840,
+    "folder": "Post wedding",
+    "file": "postwedd (88 of 224).jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAwAwCdASoYABAAPu1mq04ppaQiMAgBMB2JQAAGMaqOZf4AAP0RyeqN0o8UKbP8UjfpAnMVWPmm+ggkbPGqfwr8PgTvBEK78/Pcmn2AAAA="
+  },
+  "reception-dsc03209": {
+    "w": 4476,
+    "h": 5908,
+    "folder": "Reception",
+    "file": "DSC03209.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAAAwBQCdASoYACAAPt1epE2opaOiN/qoARAbiUAW9wqj6i9jA5ujPDrXNDQ3aSxtOxFtgAD+9UO2Ue7HhiPfGE+yOZpHPkPMgU0zLS55UxAkURSxaU3GBewQiX60NLeHQfR5O4ozVXAGTDiEH9o90aMNz2xu/Jgd6sKuRaLExWqLoOAdP8toyi5AAAA="
+  },
+  "reception-dsc03268": {
+    "w": 4672,
+    "h": 6176,
+    "folder": "Reception",
+    "file": "DSC03268.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAABQBQCdASoYACAAPu1oqU2ppiQiMAgBMB2JQBgbg9ImcRGjnY0We4dzvEvomk341XEafAAA/q90dtMuTk1/zQRThVzPZUWpP/jOxSxhxHvk6N6umYoC4L5ZTNLqsGDquwPrz8fa5a8/EDixZsFXIgdURAzpriT8cM2FudoZDmuOQikQAAA="
+  },
+  "rituals-and-ceremony-dsc05547": {
+    "w": 7008,
+    "h": 4672,
+    "folder": "Rituals and ceremony",
+    "file": "DSC05547.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAABQBACdASoYABAAPu1kq04ppaQiMAgBMB2JbACdMoR3ABl3KT1IlJQvS7gAAP43eVpa68jEbzgJCWjgrPBn7830obUWj0M6TamdNk99GAB2orOf/5EsHAkQ0WxH86vUd+EXqNsa2iEAAA=="
+  },
+  "rituals-and-ceremony-dsc05554": {
+    "w": 5328,
+    "h": 4611,
+    "folder": "Rituals and ceremony",
+    "file": "DSC05554.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAACQBQCdASoYABUAPu1ip02ppaOiMBgMATAdiWwAnTLMAVmbgjQazyMWwMsHK/vNQ9uLJqrrEAD97pIWQCaVnDd6v3AiqJ2icdN6clAnnT5PDXEXqG1RQ5KGs51zqMmoNo9zvhM3j2lurtnTvTCXO4SpvRXxet4XMqYWMRK1oeuzmzr5sKOzM1nkBjSdnctNtGcwcPLcAAA="
+  },
+  "rituals-and-ceremony-dsc05564": {
+    "w": 7008,
+    "h": 4672,
+    "folder": "Rituals and ceremony",
+    "file": "DSC05564.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAwBACdASoYABAAPu1iqk2ppaQiMAgBMB2JbACdMoACs+4wXL/a2PwJ+ggA/loSIRBTemcYbv8x3nclQxDsqM5q1+dPT/fiibmp4WYsDB+nOC/gebd5yBmTUUpEyr0U4LOiOa3R8e7ynUI7cVLfOXkeOwtdulL46wSk/CwAAAA="
+  },
+  "rituals-and-ceremony-dsc05582": {
+    "w": 7008,
+    "h": 4672,
+    "folder": "Rituals and ceremony",
+    "file": "DSC05582.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADQAwCdASoYABAAPu1iqU2ppaQiMAgBMB2JaACdMoACWdY3av1olsAA/j8M/4b1ravGPSGPKiWNWm03A8oO/JlxvG6h2/obgpDxd+ERl+83n5Tn1cZ5fVfNTCxzIqNfco9Y7qSWAAA="
+  },
+  "rituals-and-ceremony-dsc05635": {
+    "w": 7008,
+    "h": 4672,
+    "folder": "Rituals and ceremony",
+    "file": "DSC05635.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JbAC7MoABnbZMgPUMw/eY1gAA/sAzIJtOzZnXY/11t/PJolLKHJaaNZ2V2Hag7avpN5zxKUWwOgDjen8G00rUEmg7OaMldbFaZq8F6N7HWxsAAAA="
+  },
+  "rituals-and-ceremony-dsc07947": {
+    "w": 4672,
+    "h": 7008,
+    "folder": "Rituals and ceremony",
+    "file": "DSC07947.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAABQBgCdASoYACQAPu1yrVGppyQiqrgKATAdiWYAs4Bigi3N2NrTFMXBjdlr13Qb09FFC/etHp6ZVuPwAAD++ZK3t493E/Eh42swdvriksDzp4V5dtUDCOS2ShByv5gUGYY+OgZUr+WH32KSBBzIizUTDXbuZmULFWo/Mu/ZA1tcjImlk+4rnJKl8OzhkSOdy8gCRa97L7/8qkFV/ll7Uk/EhZ1jXV0ouj/e/dKoAAA="
+  },
+  "weddings-dsc00028": {
+    "w": 7008,
+    "h": 4672,
+    "folder": "Weddings",
+    "file": "DSC00028.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAABQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JbACdMoR3AB/iVZzjvVxgZadcAP7xTfdunOKAIurDf8VSJ4hxHiGYpFogCg+DZWAuWDs7BIkI5PrhylXZNC9TICRpz6JTozQ9m+Ft5LQAAA=="
+  },
+  "weddings-dsc00180": {
+    "w": 3659,
+    "h": 3494,
+    "folder": "Weddings",
+    "file": "DSC00180.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAACwBQCdASoYABcAPu1orU2ppqSiMBgMATAdiWYAwrLfBSH8BH6mFFjL04+HlbMrQi3XJKyZ/AAA/uzZtqkmNrLHpXMEQrEutATQaz55eTp1dumC+rLeKnricHATSmOKyyYDQq3UIcpsH9jP055E44Oya1vOnZkpJ87NsgHsLq48cicM9K6/io1Bx99nZ6uE0AA="
+  },
+  "weddings-dsc00604": {
+    "w": 4672,
+    "h": 7008,
+    "folder": "Weddings",
+    "file": "DSC00604.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAABwBgCdASoYACQAPuFcp02opSOiNVgMARAcCWQAsR9Pe5gVQF1xIIoEhi4Y/d080Y50HtZPftWMH1Cl+gAA/nQIC4PKw7AsDAkDW/xhPivzhfVgnUGcJ7VNV7lUeX0+YUYLd/8Rrk8QRe1T1ldaWJHXqqzfEvjMHRkVeI6Tj0sQDDq8O80nymbaGKxp6z/4gmafUxa3QBZHNmUWjdeeWhT8M1vE3ge/avw/wAAA"
+  },
+  "weddings-dsc00836": {
+    "w": 7008,
+    "h": 4672,
+    "folder": "Weddings",
+    "file": "DSC00836.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAwBACdASoYABAAPu1kq04ppaQiMAgBMB2JagCdMoACTRvYAJ2cNWJldwAA4UDqFcZX0JkZiXlAUiW4e0BsdiCO8A+2VWAfjSkSOrRsqHO5Cq+29iN27EYGP+Kut1CCdQ3IqmLpzyc6T+gA"
+  },
+  "weddings-dsc06816": {
+    "w": 7008,
+    "h": 4672,
+    "folder": "Weddings",
+    "file": "DSC06816.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAABQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JbACdMoRwACWao4wkPFXM4xUAAP5+aolFgFCvFFbASA9C4luuEEkV/jl60TZv8Usqs7Y4GG/V1NOsZVUtE0x1FnD3xpSMGz7IhSP82awjJzRx/930FXDUdBxAAA=="
+  },
+  "weddings-dsc06848": {
+    "w": 4672,
+    "h": 7008,
+    "folder": "Weddings",
+    "file": "DSC06848.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAABQBgCdASoYACQAPu1ep08ppKMiMBVdUTAdiWgArDLweCRifuY3MaZrApfWHiQIXZMgQQ2ljenlqrWccADINfwuyqSQrQCIR34+rg5Ru9zZEa8Ir7v2EfTPn6fm3WcVF+gxDBpy5OGudRjpZXKnwiHDrQsynzIX7kGNZI28oqoHvy0dIYqHPdbC9ThWT2WRFhpAdlImTZZNQRNa4Cnl+RZHNH8ZFglJzRzB/0j8SoAAAA=="
+  },
+  "weddings-dsc07117": {
+    "w": 5829,
+    "h": 4293,
+    "folder": "Weddings",
+    "file": "DSC07117.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAAAwBQCdASoYABIAPu1qq0+ppiOiMBgIATAdiWQAnTLfARcG+UQW6o9XA0CmoOTKxKAHAAD+tuq/hcxd3Fk+nRueEYbV/tl0Qmw+gkNT+kjazdAEaSwexFc8iXoGEdmD4ztxdx81RHmjieCvXw+rbzS+xYagVUy7feDFOFzl8N4CVpcspXzYeDdxokqi0rf9AAA="
+  },
+  "weddings-dsc07123": {
+    "w": 7008,
+    "h": 4672,
+    "folder": "Weddings",
+    "file": "DSC07123.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JbACdMoAB96PBUKAG8hHa/wAA/sFGmqjQZxDX3ZktnGUiq2sh2VBeLcIPm9UC90nkWY8cN9Ga4dZh/2VT0Q9A3TkdNKrsx2FUJ35+yS96tMUR8fFfBah1uT71QP02k6AAAA=="
+  },
+  "weddings-dsc07314": {
+    "w": 4672,
+    "h": 5743,
+    "folder": "Weddings",
+    "file": "DSC07314.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAABwBQCdASoYAB0APu1wr1IppiQiqAgBMB2JbACdAAy9dxam6aN9HzuIv7rGKZdd7MlAatEAAP61RDVKNIDA2VIx0cLy4hhfh8UpJNJ9mbRhMvFScBe0nZ8/r+0lskRvWiMEJNunrjNb5qoysaCzMPwTMh86urc8jfvXLX3PIxXgMG4pZjujmfkeFrPEODjk/AoOzHU5+gzrUWsnxz7SLqwEnLfEaIKNECZ+d4AA"
+  },
+  "weddings-dsc07536": {
+    "w": 7008,
+    "h": 4672,
+    "folder": "Weddings",
+    "file": "DSC07536.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAACwBACdASoYABAAPu1iqk2ppaQiMAgBMB2JbACdMoADgGrkQ+Z9y10b9W9pSQNAAP3bvwMcwytknQ92izud+cGXRA5mIxQw6eZksz6lnAkTFZebFMn3man53ytG7L1xNgydGmM206Yh7IHDwXKql6Z3Cc+OREBdGW4dAAAA"
+  },
+  "pre-wedding-shoots-1c7a2202": {
+    "w": 3301,
+    "h": 4951,
+    "folder": "pre wedding shoots",
+    "file": "1C7A2202.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAAAwBgCdASoYACQAPu1cqE2ppKOiNVgIATAdiWMAgmMFVox4d3w7n3Ic1rn8YooG1uexx4tJdY2WYwCAAP6PEnuAV4jpawZ7jxSHqywPQEJTN6hAYmjtE1gBKA0e0pNvOpgZXVi0+5WsPc8ofhO3FAoaQL5yjR+G+ilrHgOB5DHwKxU7iO9LEKDyyZ2KGXe9yHUfLxIJmzqft7K0ZXru1qMijMU/VjkiAAA="
+  },
+  "pre-wedding-shoots-1c7a2272": {
+    "w": 5760,
+    "h": 3840,
+    "folder": "pre wedding shoots",
+    "file": "1C7A2272.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADQAwCdASoYABAAPu1mqk4ppaOiMAgBMB2JQBadBDrUEm42nWKPA4AA/t7eZh4mRpJTJrhhcFW5ySOhKgDLLFJH0nygsAS0Kg2ViR4zh49WWsU/YEAAAA=="
+  },
+  "pre-wedding-shoots-1c7a9349": {
+    "w": 5643,
+    "h": 3762,
+    "folder": "pre wedding shoots",
+    "file": "1C7A9349.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQBACdASoYABAAPu1mqk2ppaQiMAgBMB2JZQAAUqtyPOVL1MJV4SCmFAD+5efmBFUuaX9U37S3qv//Jnnay2OLZUEXo45sqiH22r/C87T18EAA"
+  },
+  "pre-wedding-shoots-dsc01852": {
+    "w": 3072,
+    "h": 4608,
+    "folder": "pre wedding shoots",
+    "file": "DSC01852.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAAAwBgCdASoYACQAPu1oqFEppaOiqrgMATAdiUAXYAOt9Zp9vXEVHCxo5RVboyLPJEPfVpQxY9lJAY2gAP1kN6e5FsOZ7Ftcp05TEbXOH314t8m+Aa1irzq/csU9WcCdlrrnIXEc7fywCJifcbyGuV+F7hfg2SZ0b22in7YKemUcW8PLwt6RT3/DkOOBtpM4Ot8hzi8AAAA="
+  },
+  "pre-wedding-shoots-dsc01868": {
+    "w": 6873,
+    "h": 3868,
+    "folder": "pre wedding shoots",
+    "file": "DSC01868.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAwBACdASoYAA0ALrV2u12jqampiYC0SyAE6ZQYwAThRLUihWBwptt/kgAA/vM2Z7YQemOsH6zWl9ljJlE3gLb6WpVQ4uoJQdfcZ/PACScoNhlZKf4yQUI4shAAAA=="
+  },
+  "pre-wedding-shoots-dsc01878": {
+    "w": 3944,
+    "h": 7008,
+    "folder": "pre wedding shoots",
+    "file": "DSC01878.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAACwBQCdASoYACsAPtlapE2oJSOiOrZoAQAbCWkAAP6My6qZNdQIZllxdWZotIXoz99Z+Qo+P0AA/vW/xOH9VA2apyAlq9aXI7SjRJlVf1TGs2XTwLa2l5l/t11QO/4K/+4JdPcJtQ30AAAA"
+  },
+  "pre-wedding-shoots-dsc01900": {
+    "w": 3944,
+    "h": 7008,
+    "folder": "pre wedding shoots",
+    "file": "DSC01900.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAABQBQCdASoYACsAPtVWo02oJKMiOrmYAQAaiUzICvMllFAmxwGKKDY06SUOLaS6b60tNKAA/vUvf8sUC4tb1cjuJ+VoRHzScjwZqEZWF0JxQnSWFEUQ0iitB3Nkf5o2azAq3maSwrvUwrrAi6mMirx6q3hKgwMghzsBothLjfStaJQxxKOUXPYAAAA="
+  },
+  "pre-wedding-shoots-dsc02574": {
+    "w": 4608,
+    "h": 3072,
+    "folder": "pre wedding shoots",
+    "file": "DSC02574.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAwCdASoYABAAPu1iqk2ppaQiMAgBMB2JYwCdMoADQdJaflCP7coAAP7r51SB2ZhrDGnyi3Xp2gqjt/5KT8sgOSkTsmHPXsFYBxpklnYJm2vtyfFxFMoyAAA="
+  },
+  "pre-wedding-shoots-dsc02585": {
+    "w": 4608,
+    "h": 3072,
+    "folder": "pre wedding shoots",
+    "file": "DSC02585.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAwCdASoYABAAPu1kq04ppaQiMAgBMB2JZQAAW+wpJ6/Un0L8JoAA/uvf1vR+QFR1zmVQ9gvztrm5UhLZSXn8FbQ83cCHAAA="
+  },
+  "pre-wedding-shoots-dsc03441": {
+    "w": 4672,
+    "h": 7008,
+    "folder": "pre wedding shoots",
+    "file": "DSC03441.jpg",
+    "sizes": [
+      640,
+      1080,
+      1600,
+      2400
+    ],
+    "blur": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAABQBgCdASoYACQAPulipU2pJaOiNVgIASAdCWMAv2uKAf74TdMUeXx57sVsjrY7UsUn5VD/OhjedIm/QAD+w/2yL9XkByN8sU5Wr2Xv1JJadR4sqMhNfKjhCb4Tq/D9UGLYcbAGVZ+Owwvxowrnki7wmQ2aBPdeDxC4ScCm/Ptl2KwtzBfvbeiA7iF2WbRIl8GXDFxGlMm+UvsTqNvwAA=="
+  }
+}

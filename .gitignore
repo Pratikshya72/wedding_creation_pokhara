@@ -1,0 +1,10 @@
+node_modules
+dist
+dist-preview-page
+
+# Original full-size photographs stay on the studio computer (about 500 MB).
+# The website uses the web-ready copies in public/media, which ARE included.
+photos
+
+.vercel
+*.log

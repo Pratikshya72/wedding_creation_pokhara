@@ -1,0 +1,334 @@
+@import 'tailwindcss';
+
+/* ---------------------------------------------------------------
+   Design tokens -taken from the logo:
+   magenta #E4007C, script black, and white, softened with blush tints.
+---------------------------------------------------------------- */
+@theme {
+  --color-ivory: #ffffff; /* page background (white, as in the logo) */
+  --color-paper: #fdf0f6; /* blush section background */
+  --color-sand: #f8e1ec; /* image placeholder tint */
+  --color-line: #f1d3e1; /* hairlines */
+  --color-stone: #8d6c7c; /* muted mauve text */
+  --color-taupe: #574550; /* body copy */
+  --color-ink: #1b1b1b; /* logo black */
+  --color-night: #170c12; /* deep plum-black for cinematic sections */
+  --color-pink: #e4007c; /* logo magenta */
+  --color-pink-deep: #b8005f; /* hover / pressed */
+  --color-pink-soft: #ff7ab8; /* pink on dark backgrounds */
+  --color-rose: #c8102e; /* form errors only */
+
+  --font-serif: 'Cormorant Garamond', 'Times New Roman', serif;
+  --font-sans: 'Jost', 'Helvetica Neue', Arial, sans-serif;
+
+  --ease-silk: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-ivory font-sans text-ink antialiased;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    background: var(--color-pink);
+    color: #fff;
+  }
+  :focus-visible {
+    outline: 1px solid currentColor;
+    outline-offset: 4px;
+  }
+  img {
+    user-select: none;
+  }
+}
+
+@layer components {
+  /* Small spaced capitals -echoes "P O K H A R A" in the logo */
+  .eyebrow {
+    @apply font-sans text-[0.68rem] font-normal uppercase tracking-[0.42em];
+  }
+  .display {
+    @apply font-serif font-light leading-[0.98] tracking-[-0.01em];
+  }
+  /* The italic word in each heading carries the logo's magenta */
+  .display em {
+    color: var(--color-pink);
+  }
+  .bg-night .display em,
+  .text-white .display em,
+  .display.text-white em {
+    color: var(--color-pink-soft);
+  }
+  .container-x {
+    @apply mx-auto w-full max-w-[1440px] px-5 sm:px-8 lg:px-14;
+  }
+
+  /* Underline that draws in from the left on hover */
+  .link-line {
+    background-image: linear-gradient(var(--color-pink), var(--color-pink));
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.6s var(--ease-silk);
+    padding-bottom: 2px;
+  }
+  .link-line:hover,
+  .link-line:focus-visible,
+  .link-line[aria-current='page'] {
+    background-size: 100% 1px;
+  }
+
+  /* Bordered text button */
+  .btn {
+    @apply relative inline-flex items-center justify-center gap-3 overflow-hidden border px-8 py-4 text-[0.7rem] font-normal uppercase tracking-[0.32em] transition-colors duration-500;
+  }
+  .btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: currentColor;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.6s var(--ease-silk);
+    z-index: -1;
+  }
+  /* Outline pink button that fills with magenta on hover */
+  .btn-dark {
+    @apply border-pink text-pink;
+  }
+  .btn-dark:hover {
+    @apply text-white;
+  }
+  .btn-dark::before {
+    background: var(--color-pink);
+  }
+  /* Solid magenta button -primary actions */
+  .btn-pink {
+    @apply border-pink bg-pink text-white;
+  }
+  .btn-pink::before {
+    background: var(--color-pink-deep);
+  }
+  .btn-light {
+    @apply border-white/70 text-white;
+  }
+  .btn-light:hover {
+    @apply text-ink;
+  }
+  .btn-light::before {
+    background: #fff;
+  }
+  .btn:hover::before {
+    transform: scaleY(1);
+  }
+  .btn {
+    isolation: isolate;
+  }
+
+  /* Form fields -hairline underline style */
+  .field {
+    @apply w-full border-0 border-b border-line bg-transparent px-0 pt-2 pb-3 font-sans text-base font-light text-ink placeholder:text-stone/60 transition-colors duration-300;
+    border-radius: 0;
+  }
+  /* Boxed form input (booking enquiry) */
+  .input {
+    @apply block w-full rounded-xl border border-line bg-paper/50 px-4 py-3.5 font-sans text-base font-normal text-ink placeholder:font-light placeholder:text-stone/70 transition-all duration-300;
+  }
+  .input:hover {
+    @apply border-pink/50;
+  }
+  .input:focus {
+    @apply border-pink bg-white outline-none;
+    box-shadow: 0 0 0 4px rgb(228 0 124 / 0.12);
+  }
+  .input[aria-invalid='true'] {
+    @apply border-rose bg-white;
+  }
+  .input[type='date'] {
+    min-height: 3.35rem;
+  }
+  .field:focus {
+    @apply border-pink outline-none;
+  }
+  .field[aria-invalid='true'] {
+    @apply border-rose;
+  }
+}
+
+/* ---------------------------------------------------------------
+   Text over photographs
+   A scrim darkens only where the text sits (bottom + left), so the
+   photo stays bright elsewhere; on phones, where text spans the full
+   width, it deepens from the bottom instead.
+---------------------------------------------------------------- */
+.hero-scrim {
+  /* --photo-dim: an even shade over the whole photo (raise to dim more) */
+  --photo-dim: rgb(20 9 15 / 0.22);
+  background:
+    linear-gradient(to top, rgb(20 9 15 / 0.82) 0%, rgb(20 9 15 / 0.42) 38%, rgb(20 9 15 / 0.06) 66%, rgb(20 9 15 / 0.32) 100%),
+    linear-gradient(90deg, rgb(20 9 15 / 0.6) 0%, rgb(20 9 15 / 0.34) 42%, rgb(20 9 15 / 0) 78%),
+    linear-gradient(var(--photo-dim), var(--photo-dim));
+}
+@media (max-width: 639px) {
+  .hero-scrim {
+    background:
+      linear-gradient(to top, rgb(20 9 15 / 0.88) 0%, rgb(20 9 15 / 0.6) 45%, rgb(20 9 15 / 0.22) 72%, rgb(20 9 15 / 0.38) 100%),
+      linear-gradient(var(--photo-dim), var(--photo-dim));
+  }
+}
+/* Soft shadow under lettering: invisible as an effect, but lifts white
+   text off busy or bright areas of a photo. */
+.text-legible {
+  text-shadow:
+    0 1px 2px rgb(0 0 0 / 0.28),
+    0 2px 28px rgb(0 0 0 / 0.38);
+}
+
+/* ---------------------------------------------------------------
+   Motion
+---------------------------------------------------------------- */
+.reveal {
+  opacity: 0;
+  transform: translate3d(0, 38px, 0);
+  transition:
+    opacity 1.2s var(--ease-silk),
+    transform 1.4s var(--ease-silk);
+  transition-delay: var(--delay, 0ms);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Images unveil with a curtain wipe and settle from a slight zoom */
+.reveal-img-inner {
+  /* 1px left open on purpose: fully clipped images are invisible to the
+     browser's lazy-loader, so they would only start downloading on reveal. */
+  clip-path: inset(calc(100% - 1px) 0 0 0);
+  transition: clip-path 1.6s var(--ease-silk);
+  transition-delay: var(--delay, 0ms);
+}
+.reveal-img img {
+  transform: scale(1.18);
+  transition:
+    transform 2.2s var(--ease-silk),
+    opacity 1.2s ease;
+  transition-delay: var(--delay, 0ms);
+}
+.reveal-img.is-visible .reveal-img-inner {
+  clip-path: inset(0 0 0 0);
+}
+.reveal-img.is-visible img {
+  transform: scale(1);
+}
+
+/* Slow cinematic drift for the hero slideshow */
+@keyframes kenburns {
+  from {
+    transform: scale(1.12) translate3d(0, 0, 0);
+  }
+  to {
+    transform: scale(1) translate3d(-1.5%, -1%, 0);
+  }
+}
+.kenburns {
+  animation: kenburns 9s linear forwards;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 110%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.rise {
+  display: inline-block;
+  animation: rise 1.4s var(--ease-silk) both;
+  animation-delay: var(--delay, 0ms);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fade-in 1.2s var(--ease-silk) both;
+  animation-delay: var(--delay, 0ms);
+}
+
+@keyframes scroll-cue {
+  0% {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  45% {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+  55% {
+    transform: scaleY(1);
+    transform-origin: bottom;
+  }
+  100% {
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+}
+.scroll-cue {
+  animation: scroll-cue 2.4s var(--ease-silk) infinite;
+}
+
+/* Page enter */
+.page-enter {
+  animation: fade-in 0.9s var(--ease-silk) both;
+}
+
+/* Hover zoom on gallery images */
+.zoom-frame img {
+  transition:
+    transform 1.6s var(--ease-silk),
+    filter 0.8s ease;
+}
+.zoom-frame:hover img {
+  transform: scale(1.045);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal,
+  .reveal-img-inner,
+  .reveal-img img {
+    opacity: 1;
+    transform: none;
+    clip-path: none;
+  }
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
