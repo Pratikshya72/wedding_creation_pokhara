@@ -114,10 +114,10 @@ export default function Footer() {
         {/* Explore */}
         <nav aria-label="Footer" className="lg:col-span-2">
           <p className="eyebrow mb-6 text-pink">Explore</p>
-          <ul className="space-y-3.5 text-[0.95rem]">
+          <ul className="space-y-1 text-[0.95rem]">
             {nav.map((n) => (
               <li key={n.to}>
-                <Link to={n.to} className="group inline-flex items-center text-taupe transition-colors duration-300 hover:text-pink">
+                <Link to={n.to} className="group inline-flex items-center py-2 text-taupe transition-colors duration-300 hover:text-pink">
                   <ArrowRight className="mr-0 w-0 opacity-0 transition-all duration-500 group-hover:mr-2 group-hover:w-5 group-hover:opacity-100" />
                   <span className="transition-transform duration-500">{n.label}</span>
                 </Link>
@@ -194,7 +194,7 @@ export default function Footer() {
             className="group eyebrow inline-flex items-center gap-3 text-ink transition-colors hover:text-pink sm:mr-20"
           >
             Back to top
-            <span className="flex h-9 w-9 items-center justify-center rounded-full border border-pink/40 text-pink transition-all duration-500 group-hover:-translate-y-1 group-hover:bg-pink group-hover:text-white">
+            <span className="flex h-10 w-10 items-center justify-center rounded-full border border-pink/40 text-pink transition-all duration-500 group-hover:-translate-y-1 group-hover:bg-pink group-hover:text-white">
               <ArrowUp />
             </span>
           </button>

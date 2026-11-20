@@ -19,9 +19,9 @@ import { services } from '../data/services'
 import { testimonials } from '../data/testimonials'
 
 const HERO_SLIDES = [
-  { name: 'post-wedding-postwed-27', position: 'center 45%' },
+  { name: 'weddings-dsc07123', position: 'center 38%', mobilePosition: '25% 40%' },
   { name: 'post-wedding-pokhara-dorje-resort-47-of-57', position: 'center 35%' },
-  { name: 'weddings-dsc07117', position: 'center 30%' },
+  { name: 'post-wedding-postwed-27', position: 'center 45%' },
   { name: 'pre-wedding-shoots-1c7a2272', position: '60% 40%' },
 ]
 const SLIDE_MS = 6500
@@ -214,6 +214,7 @@ export default function Home() {
 
       <Landscape />
       <ServicesOverview />
+      <GoogleRating />
       {testimonials.length > 0 && <Testimonials />}
       <ContactBand />
     </>
@@ -255,6 +256,7 @@ function Hero() {
               fill
               priority={i === 0}
               position={s.position}
+              mobilePosition={s.mobilePosition}
               sizes="100vw"
               alt=""
               imgClassName={i === active ? 'kenburns' : ''}
@@ -269,7 +271,7 @@ function Hero() {
           Wedding Photography &amp; Films <span className="max-sm:hidden">&nbsp;·&nbsp;</span>
           <br className="sm:hidden" /> Pokhara, Nepal
         </p>
-        <h1 className="display mt-6 text-[3.6rem] sm:text-[6rem] lg:text-[9.5rem] xl:text-[11rem]">
+        <h1 className="display mt-6 text-[clamp(2.6rem,14.5vw,3.6rem)] sm:text-[6rem] lg:text-[9.5rem] xl:text-[11rem]">
           <span className="block overflow-hidden pb-1">
             <span className="rise" style={{ '--delay': '500ms' }}>
               Love, in light
@@ -300,7 +302,7 @@ function Hero() {
               onClick={() => setActive(i)}
               aria-label={`Show photograph ${i + 1}`}
               aria-current={i === active}
-              className="group py-3"
+              className="group py-5"
             >
               <span className="relative block h-px w-8 overflow-hidden bg-white/30 sm:w-12">
                 <span
@@ -318,7 +320,7 @@ function Hero() {
           <button
             type="button"
             onClick={() => setPaused((p) => !p)}
-            className="eyebrow ml-2 !text-[0.6rem] text-white/60 hover:text-white"
+            className="eyebrow -my-3 ml-1 px-2 py-4 !text-[0.6rem] text-white/70 hover:text-white"
             aria-label={paused ? 'Play slideshow' : 'Pause slideshow'}
           >
             {paused ? 'Play' : 'Pause'}
@@ -484,6 +486,44 @@ function ServicesOverview() {
 }
 
 /* ———————————————————-Testimonials (only renders with genuine content) ———————————————————-*/
+function GoogleRating() {
+  const g = site.google
+  if (!g) return null
+  return (
+    <section className="container-x py-20 text-center lg:py-28" aria-labelledby="rating-title">
+      <Reveal>
+        <p className="eyebrow text-pink">Loved by our couples</p>
+      </Reveal>
+      <Reveal delay={100}>
+        <div className="mt-7 flex items-center justify-center gap-1.5 text-pink" role="img" aria-label={`${g.rating} out of 5 stars`}>
+          {[0, 1, 2, 3, 4].map((i) => (
+            <svg key={i} viewBox="0 0 24 24" className="h-7 w-7" aria-hidden="true">
+              <path fill="currentColor" d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z" />
+            </svg>
+          ))}
+        </div>
+      </Reveal>
+      <Reveal delay={180}>
+        <h2 id="rating-title" className="display mt-6 text-5xl sm:text-6xl lg:text-7xl">
+          Rated <em>{g.rating}</em> on Google
+        </h2>
+      </Reveal>
+      <Reveal delay={260}>
+        <p className="mx-auto mt-5 max-w-md leading-relaxed text-taupe">
+          From {g.reviews} reviews on our Google listing, as of {g.checked}.
+        </p>
+      </Reveal>
+      <Reveal delay={340}>
+        <a href={site.mapUrl} target="_blank" rel="noopener noreferrer" className="btn btn-dark group mt-9 rounded-full">
+          Read the reviews
+          <ArrowRight className="w-6 transition-transform duration-500 group-hover:translate-x-1" />
+          <span className="sr-only"> on Google (opens in a new tab)</span>
+        </a>
+      </Reveal>
+    </section>
+  )
+}
+
 function Testimonials() {
   const [i, setI] = useState(0)
   const t = testimonials[i]

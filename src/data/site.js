@@ -3,7 +3,7 @@
  * Everything here comes from details supplied by the studio or its public
  * Instagram profile. Edit this file to update the whole site.
  */
-const phoneDigits = '9779715005544'
+const phoneDigits = '9779806601817'
 
 export const site = {
   name: 'Wedding Creation',
@@ -11,7 +11,7 @@ export const site = {
   // From the studio's Instagram bio
   bio: "Pokhara's favourite wedding filmer",
 
-  phoneDisplay: '+977 971 500 5544',
+  phoneDisplay: '+977 980 660 1817',
   phoneHref: `tel:+${phoneDigits}`,
   whatsappNumber: phoneDigits,
 
@@ -26,9 +26,13 @@ export const site = {
   mapLabel: 'Sugam Marg, Pokhara',
   mapEmbed: 'https://www.google.com/maps?q=Wedding+Creation+Pokhara,+Sugam+Marg,+Pokhara&ll=28.2119023,83.9745411&z=17&output=embed',
 
+  // Rating shown on the studio's Google listing. Update when it changes.
+  google: { rating: '4.9', reviews: 186, checked: 'November 2026' },
+
   socials: [
     { label: 'Instagram', handle: '@wedding_creation_pokhara', href: 'https://www.instagram.com/wedding_creation_pokhara/' },
     { label: 'Facebook', handle: 'weddingcreationpokhara', href: 'https://www.facebook.com/weddingcreationpokhara' },
+    { label: 'YouTube', handle: '@weddingcreationpokhara', href: 'https://www.youtube.com/@weddingcreationpokhara' },
     { label: 'TikTok', handle: '@wedding_creation_pokhara', href: 'https://www.tiktok.com/@wedding_creation_pokhara' },
   ],
 

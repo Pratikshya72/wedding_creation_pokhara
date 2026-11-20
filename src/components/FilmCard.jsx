@@ -1,4 +1,4 @@
-import Photo from './Photo'
+import FilmPoster from './FilmPoster'
 import { RevealImage } from './Reveal'
 import { Play } from './Icons'
 
@@ -14,9 +14,9 @@ export default function FilmCard({ film, onPlay, size = 'card', delay = 0, sizes
     >
       <RevealImage delay={delay}>
         <div className="zoom-frame relative">
-          <Photo
-            name={film.poster}
-            aspect={feature ? '21 / 9' : '16 / 10'}
+          <FilmPoster
+            film={film}
+            aspect={feature ? '21 / 9' : '2.35 / 1'}
             sizes={sizes ?? (feature ? '100vw' : '(min-width:1024px) 33vw, 90vw')}
             className={feature ? 'max-sm:!aspect-[4/5]' : ''}
             imgClassName="brightness-[.82] group-hover:brightness-[.68]"
@@ -39,9 +39,11 @@ export default function FilmCard({ film, onPlay, size = 'card', delay = 0, sizes
         </div>
       </RevealImage>
       {!feature && (
-        <span className="mt-5 flex items-baseline justify-between gap-4">
-          <span className={`font-serif text-2xl font-light italic ${dark ? 'text-ivory' : 'text-ink'}`}>{film.title}</span>
-          <span className={`eyebrow shrink-0 ${dark ? 'text-white/45' : 'text-stone'}`}>{film.kind}</span>
+        <span className="mt-5 block">
+          <span className={`block font-serif text-2xl font-light transition-colors duration-300 group-hover:text-pink-soft ${dark ? 'text-ivory' : 'text-ink'}`}>
+            {film.title}
+          </span>
+          <span className={`eyebrow mt-2 block !text-[0.62rem] ${dark ? 'text-white/50' : 'text-stone'}`}>{film.kind}</span>
         </span>
       )}
     </button>

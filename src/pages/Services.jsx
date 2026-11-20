@@ -65,7 +65,7 @@ export default function Services() {
                   <p className="eyebrow text-pink">{String(i + 1).padStart(2, '0')}</p>
                 </Reveal>
                 <Reveal delay={100}>
-                  <h2 id={`${s.slug}-title`} className="display mt-5 text-5xl lg:text-6xl">
+                  <h2 id={`${s.slug}-title`} className="display mt-5 text-[2.5rem] break-words sm:text-5xl lg:text-6xl">
                     {s.title}
                   </h2>
                 </Reveal>

@@ -404,10 +404,10 @@ export default function Contact() {
             <Reveal delay={200}>
               <div className="mt-12 border-t border-line pt-8">
                 <p className="eyebrow text-pink">Follow our work</p>
-                <ul className="mt-5 space-y-4">
+                <ul className="mt-3 space-y-0">
                   {site.socials.map((s) => (
                     <li key={s.label}>
-                      <a href={s.href} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-4">
+                      <a href={s.href} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-4 py-2.5">
                         <SocialIcon label={s.label} />
                         <span className="link-line">{s.handle}</span>
                         <span className="sr-only">on {s.label} (opens in a new tab)</span>

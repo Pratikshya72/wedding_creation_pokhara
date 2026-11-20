@@ -5,8 +5,8 @@ import { useScrollLock } from '../hooks/useScrollLock'
 import Logo from './Logo'
 import { SocialIcon } from './Icons'
 
-const left = nav.filter((n) => ['/our-story', '/portfolio', '/films'].includes(n.to))
-const right = nav.filter((n) => ['/services'].includes(n.to))
+// Desktop menu: every page except Home (the logo) and Contact (the Enquire button)
+const links = nav.filter((n) => !['/', '/contact'].includes(n.to))
 
 export default function Header() {
   const [solid, setSolid] = useState(false)
@@ -75,43 +75,34 @@ export default function Header() {
           }`}
         />
         <div
-          className={`container-x relative grid grid-cols-[1fr_auto_1fr] items-center transition-[height] duration-700 ${
-            solid ? 'h-[76px] lg:h-[88px]' : 'h-[88px] lg:h-[112px]'
+          className={`container-x relative flex items-center justify-between gap-6 transition-[height] duration-700 ${
+            solid ? 'h-[72px] lg:h-[84px]' : 'h-[84px] lg:h-[104px]'
           }`}
         >
-          <nav aria-label="Primary" className="hidden lg:block">
-            <ul className="flex items-center gap-10">
-              {left.map((n) => (
-                <li key={n.to}>
-                  <NavLink to={n.to} className={linkCls}>
-                    {n.label}
-                  </NavLink>
-                </li>
-              ))}
-            </ul>
-          </nav>
-
-          <Link
-            to="/"
-            aria-label={`${site.fullName} -home`}
-            className="col-start-1 justify-self-start lg:col-start-2 lg:justify-self-center"
-          >
-            <Logo light={light} className={`transition-[height] duration-700 ${solid ? 'h-12 lg:h-[4.1rem]' : 'h-12 lg:h-[4.6rem]'}`} />
+          {/* Logo, left */}
+          <Link to="/" aria-label={`${site.fullName} - home`} className="shrink-0 transition-opacity duration-300 hover:opacity-85">
+            <Logo
+              light={light}
+              className={`transition-[height] duration-700 ${solid ? 'h-11 sm:h-12 lg:h-[3.9rem]' : 'h-12 sm:h-14 lg:h-[4.5rem]'}`}
+            />
           </Link>
 
-          <div className="col-start-3 flex items-center justify-end gap-10">
-            <ul className="hidden items-center gap-10 lg:flex">
-              {right.map((n) => (
-                <li key={n.to}>
-                  <NavLink to={n.to} className={linkCls}>
-                    {n.label}
-                  </NavLink>
-                </li>
-              ))}
-            </ul>
+          {/* Menu + button, right */}
+          <div className="flex items-center gap-8 xl:gap-12">
+            <nav aria-label="Primary" className="hidden lg:block">
+              <ul className="flex items-center gap-8 xl:gap-11">
+                {links.map((n) => (
+                  <li key={n.to}>
+                    <NavLink to={n.to} className={linkCls}>
+                      {n.label}
+                    </NavLink>
+                  </li>
+                ))}
+              </ul>
+            </nav>
             <Link
               to="/contact"
-              className={`btn hidden !px-6 !py-3 lg:inline-flex ${light ? 'btn-light' : 'btn-pink'}`}
+              className={`btn hidden rounded-full !px-7 !py-3 lg:inline-flex ${light ? 'btn-light' : 'btn-pink'}`}
             >
               Enquire
             </Link>
@@ -122,18 +113,25 @@ export default function Header() {
               onClick={() => setOpen((o) => !o)}
               aria-expanded={open}
               aria-controls="mobile-menu"
-              className={`group flex items-center gap-3 lg:hidden ${light ? 'text-white' : 'text-ink'}`}
+              aria-label={open ? 'Close menu' : 'Open menu'}
+              className={`group -mr-2 flex h-11 w-11 items-center justify-center rounded-full transition-colors duration-300 lg:hidden ${
+                light ? 'text-white hover:bg-white/15' : 'text-ink hover:bg-paper hover:text-pink'
+              }`}
             >
-              <span className={`eyebrow ${light ? '' : 'font-medium'}`}>{open ? 'Close' : 'Menu'}</span>
-              <span className="relative block h-3 w-7" aria-hidden="true">
+              <span className="relative block h-[18px] w-7" aria-hidden="true">
                 <span
-                  className={`absolute left-0 h-px w-full bg-current transition-transform duration-500 ${
-                    open ? 'top-1.5 rotate-45' : 'top-0'
+                  className={`absolute left-0 h-0.5 w-full rounded-full bg-current transition-all duration-500 ${
+                    open ? 'top-2 rotate-45' : 'top-0'
                   }`}
                 />
                 <span
-                  className={`absolute left-0 h-px bg-current transition-all duration-500 ${
-                    open ? 'top-1.5 w-full -rotate-45' : 'top-3 w-4 group-hover:w-full'
+                  className={`absolute top-2 left-0 h-0.5 w-full rounded-full bg-current transition-all duration-300 ${
+                    open ? 'scale-x-0 opacity-0' : ''
+                  }`}
+                />
+                <span
+                  className={`absolute left-0 h-0.5 rounded-full bg-current transition-all duration-500 ${
+                    open ? 'top-2 w-full -rotate-45' : 'top-4 w-full'
                   }`}
                 />
               </span>

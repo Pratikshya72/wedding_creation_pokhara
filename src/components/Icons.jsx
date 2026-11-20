@@ -78,9 +78,18 @@ export const ArrowUp = (p) => (
   </svg>
 )
 
-/** Icon for a social profile by its label (Instagram, Facebook, TikTok). */
+export const YouTube = (p) => (
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" {...p}>
+    <path
+      fill="currentColor"
+      d="M21.6 7.2a2.500 2.500 0 0 0-1.800-1.800C18.200 5 12 5 12 5s-6.200 0-7.800.4A2.500 2.500 0 0 0 2.400 7.200 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.800 2.500 2.500 0 0 0 1.800 1.800c1.600.4 7.800.4 7.800.4s6.200 0 7.800-.4a2.500 2.500 0 0 0 1.800-1.800A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.800zM10 15V9l5.200 3-5.200 3z"
+    />
+  </svg>
+)
+
+/** Icon for a social profile by its label (Instagram, Facebook, YouTube, TikTok). */
 export const SocialIcon = ({ label, ...p }) =>
-  label === 'Instagram' ? <Instagram {...p} /> : label === 'TikTok' ? <TikTok {...p} /> : <Facebook {...p} />
+  label === 'Instagram' ? <Instagram {...p} /> : label === 'TikTok' ? <TikTok {...p} /> : label === 'YouTube' ? <YouTube {...p} /> : <Facebook {...p} />
 
 export const User = (p) => (
   <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" {...base} {...p}>

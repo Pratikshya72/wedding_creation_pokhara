@@ -160,6 +160,30 @@
   }
 }
 
+/* Phones and tablets: text links keep their look but get a taller, invisible tap area */
+@media (max-width: 1023px) {
+  .link-line,
+  a.eyebrow {
+    position: relative;
+  }
+  .link-line::after,
+  a.eyebrow::after {
+    content: '';
+    position: absolute;
+    inset: -13px -6px;
+  }
+}
+
+/* Photo focus point: --pos-m on phones, --pos from tablets up */
+.photo-pos {
+  object-position: var(--pos-m, center);
+}
+@media (min-width: 640px) {
+  .photo-pos {
+    object-position: var(--pos, center);
+  }
+}
+
 /* ---------------------------------------------------------------
    Text over photographs
    A scrim darkens only where the text sits (bottom + left), so the

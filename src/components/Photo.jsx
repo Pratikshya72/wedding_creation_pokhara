@@ -30,6 +30,7 @@ export default function Photo({
   fill = false,
   priority = false,
   position = 'center',
+  mobilePosition,
   className = '',
   imgClassName = '',
 }) {
@@ -65,12 +66,12 @@ export default function Photo({
         width={m.w}
         height={m.h}
         loading={priority ? 'eager' : 'lazy'}
-        fetchPriority={priority ? 'high' : 'auto'}
+        fetchpriority={priority ? 'high' : 'auto'}
         decoding="async"
         draggable="false"
         onLoad={() => setLoaded(true)}
-        style={{ objectPosition: position }}
-        className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-[1200ms] ${
+        style={{ '--pos': position, '--pos-m': mobilePosition ?? position }}
+        className={`photo-pos absolute inset-0 h-full w-full object-cover transition-opacity duration-[1200ms] ${
           loaded ? 'opacity-100' : 'opacity-0'
         } ${imgClassName}`}
       />
